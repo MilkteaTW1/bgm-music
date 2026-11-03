@@ -1,4 +1,4 @@
-# bgm-forge
+# bgm-music
 
 Tell it what kind of video you are making; it composes matching background music, attacks its own result, fixes what was attacked, and hands you the best take. No music theory needed.
 
@@ -8,9 +8,9 @@ Tell it what kind of video you are making; it composes matching background music
 
 ```bash
 pip install numpy scipy        # and ffmpeg on your PATH
-python -m bgm_forge --list     # video types and why each sounds the way it does
-python -m bgm_forge --video vlog --duration 45
-python -m bgm_forge --video 教學 --duration 90 --loop
+python -m bgm_music --list     # video types and why each sounds the way it does
+python -m bgm_music --video vlog --duration 45
+python -m bgm_music --video 教學 --duration 90 --loop
 ```
 
 Output: `out/<type>_<seconds>s.mp3` plus a `.review.json` with every draft's score and what the critic complained about.

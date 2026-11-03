@@ -1,4 +1,4 @@
-"""python -m bgm_forge --video vlog --duration 45 --candidates 8"""
+"""python -m bgm_music --video vlog --duration 45 --candidates 8"""
 import argparse
 import json
 import subprocess
@@ -33,7 +33,7 @@ def normalise(src, dst, lufs):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(prog="bgm_forge")
+    ap = argparse.ArgumentParser(prog="bgm_music")
     ap.add_argument("--video", help="video type, e.g. vlog / 教學 / gaming")
     ap.add_argument("--duration", type=float, default=45, help="seconds")
     ap.add_argument("--candidates", type=int, default=8)
